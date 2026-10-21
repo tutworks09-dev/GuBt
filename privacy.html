@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07152e">
+<meta name="description" content="Privacy Policy for GuBt Game Center">
+<title>Privacy Policy | GuBt Game Center</title>
+
+<style>
+:root {
+  --bg: #061126;
+  --panel: rgba(18, 42, 78, .68);
+  --border: rgba(142, 197, 255, .2);
+  --text: #eef5ff;
+  --muted: #b1c2dc;
+  --blue: #65b8ff;
+  --cyan: #77f0ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.8;
+  background:
+    radial-gradient(ellipse at 10% 0%, #173e75 0, transparent 40%),
+    radial-gradient(ellipse at 100% 40%, #073d58 0, transparent 35%),
+    var(--bg);
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  max-width: 1000px;
+  margin: 0 auto 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: -.5px;
+}
+
+.logo span {
+  color: var(--blue);
+}
+
+.back {
+  padding: 8px 15px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  background: #ffffff08;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(25px, 6vw, 55px);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(35, 85, 155, .48),
+    rgba(8, 23, 48, .75)
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 70px #0004;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 13px;
+  border-radius: 30px;
+  border: 1px solid #77f0ff40;
+  background: #77f0ff0d;
+  color: var(--cyan);
+  font-size: 13px;
+}
+
+h1 {
+  margin: 18px 0 12px;
+  font-size: clamp(34px, 6vw, 56px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.intro {
+  color: var(--muted);
+  max-width: 650px;
+}
+
+.updated {
+  color: #91a9ca;
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  margin-top: 22px;
+  align-items: start;
+}
+
+.toc,
+.section {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--panel);
+  backdrop-filter: blur(16px);
+}
+
+.toc {
+  padding: 18px;
+  position: sticky;
+  top: 15px;
+}
+
+.toc h2 {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.toc a {
+  display: block;
+  padding: 7px 10px;
+  margin: 3px 0;
+  border-radius: 9px;
+  font-size: 13px;
+  color: #d9e8ff;
+}
+
+.toc a:hover,
+.toc a.active {
+  background: #65b8ff20;
+  text-decoration: none;
+}
+
+.content {
+  display: grid;
+  gap: 14px;
+}
+
+.section {
+  padding: clamp(20px, 4vw, 30px);
+  scroll-margin-top: 20px;
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  color: #c3d2e8;
+  margin: 8px 0;
+}
+
+.section ul {
+  color: #c3d2e8;
+  padding-left: 22px;
+}
+
+.notice {
+  padding: 12px 15px;
+  border-left: 3px solid var(--blue);
+  background: #65b8ff12;
+  border-radius: 0 10px 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 0 12px;
+  color: #8da4c5;
+  font-size: 13px;
+}
+
+#toTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: #16365f;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: .2s;
+}
+
+#toTop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 14px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .toc {
+    position: static;
+  }
+
+  .toc nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .toc a {
+    background: #ffffff08;
+  }
+
+  header {
+    margin-bottom: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="./">GuBt <span>Game Center</span></a>
+  <a class="back" href="./">Lobby</a>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <h1>Privacy Policy</h1>
+    <p class="intro">
+      This Privacy Policy explains how GuBt Game Center may handle
+      information when you visit our website or use our games.
+    </p>
+    <p class="updated">
+      Last updated: October 21, 2026
+    </p>
+  </section>
+
+  <div class="layout">
+
+    <aside class="toc">
+      <h2>ON THIS PAGE</h2>
+      <nav id="tocLinks">
+        <a href="#overview">Overview</a>
+        <a href="#information">Information We Handle</a>
+        <a href="#usage">How Information Is Used</a>
+        <a href="#storage">Storage & Security</a>
+        <a href="#sharing">Information Sharing</a>
+        <a href="#thirdparty">Third-Party Services</a>
+        <a href="#children">Children's Privacy</a>
+        <a href="#choices">Your Choices</a>
+        <a href="#changes">Policy Changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
+
+    <div class="content">
+
+      <section class="section" id="overview">
+        <h2>1. Overview</h2>
+        <p>
+          GuBt Game Center ("we", "our", or "the website") provides
+          browser-based games and related features. We aim to handle
+          information responsibly and explain our practices clearly.
+        </p>
+        <p class="notice">
+          We do not currently use analytics tools or display
+          advertisements on the website, based on the information
+          available when this policy was prepared.
+        </p>
+      </section>
+
+      <section class="section" id="information">
+        <h2>2. Information We Handle</h2>
+        <p>
+          Depending on the games and features you use, information
+          may be processed or stored by our server or database.
+          The exact information may vary depending on the feature.
+        </p>
+        <p>
+          This may include information you submit or game-related
+          data needed to provide a requested feature.
+        </p>
+        <p>
+          Web hosting and database providers may also process
+          technical information as part of delivering and securing
+          the website, according to their own practices.
+        </p>
+      </section>
+
+      <section class="section" id="usage">
+        <h2>3. How Information Is Used</h2>
+        <p>Information may be used to:</p>
+        <ul>
+          <li>Operate and maintain the website.</li>
+          <li>Provide game features you choose to use.</li>
+          <li>Save or retrieve game-related information.</li>
+          <li>Find and fix technical problems.</li>
+          <li>Protect the service against misuse.</li>
+        </ul>
+        <p>
+          We do not claim to use information for analytics or
+          targeted advertising.
+        </p>
+      </section>
+
+      <section class="section" id="storage">
+        <h2>4. Storage and Security</h2>
+        <p>
+          Some information may be stored on a server or in a
+          database rather than only on your device.
+        </p>
+        <p>
+          The length of time information is retained depends on
+          the feature and the service configuration.
+        </p>
+        <p>
+          Reasonable security measures should be used to protect
+          stored information. However, no website or online
+          transmission method can be guaranteed to be completely
+          secure.
+        </p>
+        <p>
+          If a feature provides account, save, or data-management
+          controls, you can use those controls where available.
+        </p>
+      </section>
+
+      <section class="section" id="sharing">
+        <h2>5. Information Sharing</h2>
+        <p>
+          We do not sell personal information.
+        </p>
+        <p>
+          Information may be processed by hosting, database, or
+          technical service providers when necessary to operate
+          the website. Information may also be disclosed when
+          required by applicable law or when reasonably necessary
+          to protect the service and its users.
+        </p>
+        <p>
+          The exact providers depend on the services configured
+          for the website.
+        </p>
+      </section>
+
+      <section class="section" id="thirdparty">
+        <h2>6. Third-Party Services</h2>
+        <p>
+          The website may rely on hosting, database, or other
+          technical services. These providers may have their own
+          privacy policies and data-handling practices.
+        </p>
+        <p>
+          If you follow a link to another website, that website's
+          privacy policy applies to its own services. We do not
+          control the privacy practices of third-party websites.
+        </p>
+      </section>
+
+      <section class="section" id="children">
+        <h2>7. Children's Privacy</h2>
+        <p>
+          GuBt Game Center is a games website that may be used
+          by people of different ages.
+        </p>
+        <p>
+          We do not knowingly ask users to provide personal
+          information unless a feature requires it. Please avoid
+          submitting sensitive personal information through
+          game features.
+        </p>
+        <p>
+          If you believe a child has submitted personal information,
+          use an official contact method available on the website
+          or its hosting platform, if one is available.
+        </p>
+      </section>
+
+      <section class="section" id="choices">
+        <h2>8. Your Choices</h2>
+        <p>
+          Only provide information needed for the feature you
+          choose to use. You can stop using the website at any time.
+        </p>
+        <p>
+          If a feature provides account or data-management controls,
+          you may use them to review or change information associated
+          with that feature.
+        </p>
+        <p>
+          We do not currently list a dedicated privacy contact email,
+          so this policy does not promise an email-based request process.
+        </p>
+      </section>
+
+      <section class="section" id="changes">
+        <h2>9. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy when the website's
+          features, service providers, or data practices change.
+        </p>
+        <p>
+          When we publish an update, we will revise the
+          "Last updated" date at the top of this page.
+        </p>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>10. Contact</h2>
+        <p>
+          GuBt Game Center does not currently list a dedicated
+          privacy contact email.
+        </p>
+        <p>
+          If you need to contact the website operator, use an
+          official contact method provided on the website or
+          by its hosting platform, if available.
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> GuBt Game Center. All rights reserved.
+  </footer>
+
+</main>
+
+<button id="toTop" type="button" aria-label="Back to top">↑</button>
+
+<script>
+"use strict";
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+const links = [...document.querySelectorAll("#tocLinks a")];
+
+const sections = links
+  .map(link => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      links.forEach(link => {
+        link.classList.toggle(
+          "active",
+          link.getAttribute("href") === "#" + entry.target.id
+        );
+      });
+    });
+  }, {
+    rootMargin: "-15% 0px -70% 0px"
+  });
+
+  sections.forEach(section => observer.observe(section));
+}
+
+const toTop = document.getElementById("toTop");
+
+window.addEventListener("scroll", () => {
+  toTop.classList.toggle("visible", window.scrollY > 420);
+}, { passive: true });
+
+toTop.addEventListener("click", () => {
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  window.scrollTo({
+    top: 0,
+    behavior: reducedMotion ? "auto" : "smooth"
+  });
+});
+</script>
+
+</body>
+</html>
